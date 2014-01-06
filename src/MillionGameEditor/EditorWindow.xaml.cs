@@ -59,8 +59,10 @@ namespace MillionGameEditor
             MessageBox.Show(
                 string.Format(
                     "Easy Million Game (Editor){0}{0}" +
-                    "© 2009, Ulrich Kaiser und Andreas Helmberger{0}" +
-                    "https://github.com/musikisum/EasyMillionGame",
+                    "© 2014, Ulrich Kaiser und Andreas Helmberger{0}" +
+                    "https://github.com/musikisum/EasyMillionGame{0}{0}" +
+                    "Licensed under the GNU GENERAL PUBLIC LICENSE v2{0}" +
+                    "http://www.gnu.org/licenses/gpl-2.0",
                     Environment.NewLine),
                 "Hinweis",
                 MessageBoxButton.OK,
