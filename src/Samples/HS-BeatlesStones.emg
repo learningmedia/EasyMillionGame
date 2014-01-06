@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Game Name="Eine humorvolle Trivialisierung des Hauptseminars ›Beatles &amp; Stones‹">
+  <Level>
+    <Question>Welche Kombination war die Keimzelle der Beatles?</Question>
+    <Answers>
+      <Answer IsRight="false">Paul McCartney und die Silver Beatles</Answer>
+      <Answer IsRight="true">John Lennon und die Quarrymen</Answer>
+      <Answer IsRight="false">George Harrison and the Moondogs</Answer>
+      <Answer IsRight="false">Ringo Starr und die Joko Ono Plastikband</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Wer ist kein Gründungsmitglied der Rolling Stones?</Question>
+    <Answers>
+      <Answer IsRight="false">Mick Jagger</Answer>
+      <Answer IsRight="false">Keith Richards</Answer>
+      <Answer IsRight="false">Charly Watts</Answer>
+      <Answer IsRight="true">Mick Taylor</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Wer war im Kreis der Beatles sehr umstritten?</Question>
+    <Answers>
+      <Answer IsRight="false">Brian Epstein</Answer>
+      <Answer IsRight="false">Billy Preston</Answer>
+      <Answer IsRight="true">Allen Klein</Answer>
+      <Answer IsRight="false">George Martin</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Die Beatles und die Stones lösten die British Invasion aus. Wann waren die Bands erstmalig in den USA?</Question>
+    <Answers>
+      <Answer IsRight="false">1963 (Beatles) und 1964 (Stones)</Answer>
+      <Answer IsRight="false">1964 (Beatles) und 1965 (Stones)</Answer>
+      <Answer IsRight="true">1964 (Beatles und Stones)</Answer>
+      <Answer IsRight="false">1965 (Beatles und Stones)</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>In welches Jahr fällt Lennon's Jesus-Äußerung, das Ende der großen Livekonzerte und der Imagewandel der Beatles?</Question>
+    <Answers>
+      <Answer IsRight="false">1965</Answer>
+      <Answer IsRight="true">1966</Answer>
+      <Answer IsRight="false">1967</Answer>
+      <Answer IsRight="false">1968</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Wo und wann entsand eines der wichtigsten Alben der Rolling Stones (›Exile On Main St.‹)</Question>
+    <Answers>
+      <Answer IsRight="false">1968 in London</Answer>
+      <Answer IsRight="true">1971 in Frankreich</Answer>
+      <Answer IsRight="false">1978 in den USA</Answer>
+      <Answer IsRight="false">1981 in Schweden</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Welche Entstehungsreihenfolge der Studioalben ist richtig?</Question>
+    <Answers>
+      <Answer IsRight="false">A Hard Day's Night - The Beatles - Revolver - Let It Be</Answer>
+      <Answer IsRight="false">The Beatles - A Hard Day's Night - Revolver - Let It Be</Answer>
+      <Answer IsRight="true">A Hard Day's Night - Revolver - The Beatles - Let It Be</Answer>
+      <Answer IsRight="false">A Hard Day's Night- Revolver - Let It Be - The Beatles</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Welche Entstehungsreihenfolge der Studioalben ist richtig?</Question>
+    <Answers>
+      <Answer IsRight="false">Sticky Fingers - Beggars Banquet - It's Only Rock'n Roll - Some Girls</Answer>
+      <Answer IsRight="true">Beggars Banquet - Sticky Fingers - It's Only Rock'n Roll - Some Girls</Answer>
+      <Answer IsRight="false">Sticky Fingers - Beggars Banquet -  Some Girls - It's Only Rock'n Roll</Answer>
+      <Answer IsRight="false">Beggars Banquet - Sticky Fingers - Some Girls - It's Only Rock'n Roll</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Wo hatten die Beatles ihre künstlerisch erfolgreichste Zeit?</Question>
+    <Answers>
+      <Answer IsRight="false">1965 in Liverpool</Answer>
+      <Answer IsRight="false">1966 in San Franzisko</Answer>
+      <Answer IsRight="false">1967 in London</Answer>
+      <Answer IsRight="true">1968 in Rishikesh</Answer>
+    </Answers>
+  </Level>
+  <Level>
+    <Question>Wann war A Bigger Bang der Rolling Stones?</Question>
+    <Answers>
+      <Answer IsRight="false">1975</Answer>
+      <Answer IsRight="false">1985</Answer>
+      <Answer IsRight="false">1995</Answer>
+      <Answer IsRight="true">2005</Answer>
+    </Answers>
+  </Level>
+</Game>

@@ -1,0 +1,61 @@
+﻿<Window
+    x:Class="MillionGameEditor.EditorWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MillionGameEditor"
+    Title="{Binding Path=Name, FallbackValue=Million Game Editor, StringFormat=Million Game Editor - \{0\}}"
+    SizeToContent="WidthAndHeight"
+    ResizeMode="NoResize"
+    Background="Maroon"
+    >
+    <Grid Width="753" Height="567">
+        <Image Source="/Images/Logo.png" Width="233" Height="232" Margin="261,50,259,285" />
+        <Grid HorizontalAlignment="Right" Margin="0,50,50,0" VerticalAlignment="Top" Width="160">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button Content="Neues Spiel" Grid.Row="0" Style="{DynamicResource GlassButtonStyle}" Margin="0,0,0,15" Click="OnNewGameClick" />
+            <Button Content="Spiel laden ..." Grid.Row="1" Style="{DynamicResource GlassButtonStyle}" Click="OnLoadGameClick" Margin="0,0,0,15"/>
+            <Button Content="Spiel speichern ..." Grid.Row="2" Style="{DynamicResource GlassButtonStyle}" Margin="0,0,0,15" Click="OnSaveGameClick" />
+            <Button Content="Info" Grid.Row="3" Style="{DynamicResource GlassButtonStyle}" Margin="0,0,0,15" Click="OnInfoClick" />
+            <Button Content="Beenden" Grid.Row="4" Style="{DynamicResource GlassButtonStyle}" Click="OnCloseClick" />           
+        </Grid>
+        <Grid Margin="0,0,0,240" Visibility="{Binding Converter={x:Static local:Converters.NotNullToVisibility}, FallbackValue=Collapsed}" VerticalAlignment="Bottom" Height="64">
+            <local:SuperTextBox Margin="50,0" Text="{Binding Path=Name}" TextWrapping="NoWrap" VerticalAlignment="Center" FontSize="16" HorizontalAlignment="Stretch" TextAlignment="Center" Style="{DynamicResource GameNameBoxStyle}"/>
+        </Grid>
+        <Grid Margin="0,0,0,180" Visibility="{Binding Path=SelectedIndex, Converter={x:Static local:Converters.IndexToVisibility}, ElementName=LevelList}" VerticalAlignment="Bottom" Height="64">
+            <local:SuperTextBox Margin="50,0" DataContext="{Binding Path=SelectedItem, ElementName=LevelList}" Text="{Binding Path=Question}" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="16" HorizontalAlignment="Stretch" TextAlignment="Center" FontWeight="Bold" Style="{DynamicResource QuestionTextBoxStyle}"/>
+        </Grid>
+        <Grid Margin="0" Visibility="{Binding Path=SelectedIndex, Converter={x:Static local:Converters.IndexToVisibility}, ElementName=LevelList}" VerticalAlignment="Bottom" Height="200" DataContext="{Binding Path=SelectedItem, ElementName=LevelList}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ContentControl Style="{StaticResource GlassContentControlStyle}" HorizontalAlignment="Stretch" Margin="50,25,10,10" Height="Auto">
+                <local:SuperTextBox Style="{StaticResource AnswerTextBoxStyle}" Text="{Binding Path=Answers[0].Text, Mode=TwoWay}"/>
+            </ContentControl>
+            <ContentControl Style="{StaticResource GlassContentControlStyle}" HorizontalAlignment="Stretch" Margin="10,25,50,10" Height="Auto" Grid.Column="1">
+                <local:SuperTextBox Style="{StaticResource AnswerTextBoxStyle}" Text="{Binding Path=Answers[1].Text, Mode=TwoWay}"/>
+            </ContentControl>
+            <ContentControl Style="{StaticResource GlassContentControlStyle}" HorizontalAlignment="Stretch" Margin="50,10,10,25" Height="Auto" Grid.Row="1">
+                <local:SuperTextBox Style="{StaticResource AnswerTextBoxStyle}" Text="{Binding Path=Answers[2].Text, Mode=TwoWay}"/>
+            </ContentControl>
+            <ContentControl Style="{StaticResource GlassContentControlStyle}" HorizontalAlignment="Stretch" Margin="10,10,50,25" Height="Auto" Grid.Column="1" Grid.Row="1">
+                <local:SuperTextBox Style="{StaticResource AnswerTextBoxStyle}" Text="{Binding Path=Answers[3].Text, Mode=TwoWay}"/>
+            </ContentControl>
+            <local:SuperCheckBox IsChecked="{Binding Path=Answers[0].IsRight, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,25,0,10" Style="{DynamicResource AnswerCheckBoxStyle}"/>
+            <local:SuperCheckBox IsChecked="{Binding Path=Answers[1].IsRight, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1" Margin="0,25,20,10" Style="{DynamicResource AnswerCheckBoxStyle}"/>
+            <local:SuperCheckBox IsChecked="{Binding Path=Answers[2].IsRight, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="20,10,0,25" Style="{DynamicResource AnswerCheckBoxStyle}"/>
+            <local:SuperCheckBox IsChecked="{Binding Path=Answers[3].IsRight, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="0,10,20,25" Style="{DynamicResource AnswerCheckBoxStyle}"/>
+        </Grid>
+        <ListBox x:Name="LevelList" ItemsSource="{Binding Path=Levels}" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="150" Style="{DynamicResource ScoreStyle}" ItemContainerStyle="{DynamicResource ScoreItemContainerStyle}" Height="Auto"/>
+    </Grid>
+</Window>

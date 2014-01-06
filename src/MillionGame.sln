@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionGameEditor", "MillionGameEditor\MillionGameEditor.csproj", "{3C9198DE-515A-4A58-8139-E7076A7388FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillonGamePlayer", "MillonGamePlayer\MillonGamePlayer.csproj", "{0153EBCE-7B28-4043-9686-09C4A3671369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C9198DE-515A-4A58-8139-E7076A7388FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9198DE-515A-4A58-8139-E7076A7388FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9198DE-515A-4A58-8139-E7076A7388FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9198DE-515A-4A58-8139-E7076A7388FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0153EBCE-7B28-4043-9686-09C4A3671369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0153EBCE-7B28-4043-9686-09C4A3671369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0153EBCE-7B28-4043-9686-09C4A3671369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0153EBCE-7B28-4043-9686-09C4A3671369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

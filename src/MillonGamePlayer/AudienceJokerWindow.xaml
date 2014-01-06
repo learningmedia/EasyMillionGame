@@ -1,0 +1,55 @@
+﻿<Window 
+    x:Class="MillionGamePlayer.AudienceJokerWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Publikumsjoker" 
+    Height="300" 
+    Width="300" 
+    ResizeMode="NoResize" 
+    Loaded="Window_Loaded"
+    Background="#FF001523"
+    >
+    <Grid>
+        <Grid Margin="20, 20, 20, 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="16" />                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Beige" Grid.ColumnSpan="9"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Background="Beige" Text="A" Foreground="#FF001523" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" Grid.Column="3" Background="Beige" Text="B" Foreground="#FF001523" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" Grid.Column="5" Background="Beige" Text="C" Foreground="#FF001523" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" Grid.Column="7" Background="Beige" Text="D" Foreground="#FF001523" TextAlignment="Center" FontWeight="Bold"/>
+            
+            <DockPanel Grid.Column="1" Grid.Row="0" Height="200" VerticalAlignment="Stretch"> 
+                <Label Name="lbl_1" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+                <Label Name="lbl_1a" Background="Transparent" Height="0" DockPanel.Dock="Bottom"></Label>
+            </DockPanel>
+            <DockPanel Grid.Column="3" Grid.Row="0" Height="200" VerticalAlignment="Stretch">
+                <Label Name="lbl_2" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+                <Label Name="lbl_2a" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+            </DockPanel>
+            <DockPanel Grid.Column="5" Grid.Row="0" Height="200" VerticalAlignment="Stretch">
+                <Label Name="lbl_3" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+                <Label Name="lbl_3a" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+            </DockPanel>
+            <DockPanel Grid.Column="7" Grid.Row="0" Height="200" VerticalAlignment="Stretch">
+                <Label Name="lbl_4" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+                <Label Name="lbl_4a" Background="Transparent" DockPanel.Dock="Bottom"></Label>
+            </DockPanel>
+
+            <TextBlock Name="tb_wait" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="9" Margin="0, 30, 0, 0" Text="Achtung…" Visibility="Collapsed" Foreground="WhiteSmoke" FontSize="24" TextAlignment="Center" />
+        </Grid>
+    </Grid>
+</Window>
